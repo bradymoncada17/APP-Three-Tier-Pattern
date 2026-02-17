@@ -1,3 +1,10 @@
 <Solution>
   <Project Path="APP Three Tier/APP Three Tier.csproj" />
+  <Project Path="CapaDatos/CapaDatos.csproj" />
+  <Project Path="CapaNegocio/CapaNegocio.csproj">
+    <BuildDependency Project="CapaDatos/CapaDatos.csproj" />
+  </Project>
+  <Project Path="CapaPresentacion/CapaPresentacion.csproj">
+    <BuildDependency Project="CapaNegocio/CapaNegocio.csproj" />
+  </Project>
 </Solution>
